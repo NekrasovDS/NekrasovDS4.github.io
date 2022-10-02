@@ -1,0 +1,136 @@
+table{
+    width: 300px; 
+    border: 2px solid black; 
+    margin: auto
+}
+
+tb{
+     text-align: center
+}
+
+form{
+    text-align: center;
+    font-size: 30px;
+	margin: 30px;
+	padding:20px;
+
+}
+
+ol{
+    text-align: center
+}
+
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    background: #ff6347;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+}
+
+#page1{
+    align-content: center;
+	justify-content: space-around;
+	width: 1000px;
+	height: auto; 
+	text-align: center;
+	border-radius: 15px;
+    border-style: none;  
+	font-size: 25px;
+	box-shadow: 0 0 5px 1px #AAAAAA;
+	border-radius: 10px;
+	background: #DC143C;
+    margin: 30px auto;
+	order: 2;
+	flex: 1;
+	justify-content:center;
+}
+
+#page2{
+	background: #ff6347;
+	order: 4;
+	flex:3;
+	justify-content:center;
+	margin: 30px;
+	padding:20px;
+}
+
+#page3{
+	background: #ff6347;
+	order: 3;
+	flex:4;
+	justify-content:center;
+	margin: 30px;
+	padding:20px;
+}
+
+#pages{
+	display:flex;
+	flex:0;
+	flex-direction: column;
+}
+
+header{
+    height: 300px;
+background: linear-gradient(90deg, #8B4513, #FFD700);
+}
+
+footer {
+    border-radius: 15px;
+    height: 200px;
+    background: url(HarrierDuBois3.2.jpg);
+}
+
+.chet{
+    background-color: Gold;
+}
+.nechet{
+    background-color: DimGray;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    background: #FF6347;
+    
+}
+
+#testall{
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media only screen and (min-width: 800px) 
+{
+	#pages{
+	display:inline-block;
+		width: 500px;
+}
+	#allp {
+		flex-direction: column;
+}
+	#page1{
+		order: 1;
+		weight:300px;
+}
+
+	#page2{
+		order: 3;
+		weight:300px;
+		justify-content:center;
+}
+
+	#page3{
+		order: 2;
+		weight:300px;
+}
+}
