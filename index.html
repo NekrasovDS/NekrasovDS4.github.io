@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	  <meta charset="utf-8">
+	  <title>Гиперссылки и формы</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+  <body>
+    <header>
+            <img alt="Headhead" style="float:left;padding: 10px 20px; width: 120px; height: 120px;" src="HarrierDuBois3.1.jpg" />
+            <br />
+            <p id="Baze" style="text-align:left; font-family : LATHA; font-size:50px;"><em>Сайт Рафаэля Амброзиуса Кусто</em></p>
+    </header>
+	  <nav>
+		  <h1><a style="font-size:20px">Меню</a></h1>
+        <h2>
+            <a href="#page1">Гиперссылки</a>
+            <a href="#page2">Таблица</a>
+            <a href="#page3">Форма</a>
+        </h2>
+    </nav>
+<div class="main">
+  <div class="container"></div>
+</div>
+	  <div id="allp">
+	  <div id="page1">
+	  <h2 class="titlist">Гиперссылки</h2>
+      <ol>
+        <li><a class="titlist" href="https://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+        <li><a href="https://exemple.com">абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+        <li><a href="ftp://exemple.com/file.txt">ссылка на файл на сервере FTP без авторизации</a></li>
+        <li><a href="ftp://user:password@exemple.com/Temp/file.txt">ссылка на файл на сервере FTP с авторизацей</a></li>
+        <li><a href="http://example.com/page#about">ссылка на фрагмент страницы некоторого сайта</a></li>
+        <li><a href="#top">ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="http://example.com/?term=keyword&size=l">ссылка с двумя параметрами в URL</a></li>
+        <li><br>
+        <ul>
+          <li><a href="https://example.com/page1" title="Страница 1">Списки1</a>page1</li>
+          <li><a href="https://example.com/page2" title="Страница 2">Списки2</a>page2</li>
+          <li><a href="https://example.com/form" title="Форма"></a>form</li>
+        </ul>
+        </li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href=" ">Ссылка с пустым href</a></li>
+        <li><a href="index.html" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href="http://example.com" rel="noindex">запрещенная для индексации поисковиками</a></li>
+        <li>Контекстную в теле <a href="http://example.com">абзаца</a></li>
+        <li><a href="https://discoelysium.fandom.com/wiki/Disco_Elysium_Wiki"><img src="HarrierDuBois2.jpg" width="810" height="768" alt="ГаррьеДюбуа"></a></li>
+        <li>Нажми на голову<img src="https://avatars.yandex.net/get-music-content/4796762/1495e11b.a.15990438-1/m1000x1000?webp=false" usemap="#figuri" alt="Фигуры">
+        <map name="figuri">
+          <area shape="circle" coords="500,400,235" href="gray.htm" alt="Серый" />
+          </map>
+        </li>
+      <li><a href="about">относительная на стр в текущем каталоге</a></li>
+			<li><a href="about/file1.txt">относительная на стр в каталоге about</a></li>
+			<li><a href="../about">относительная на стр в каталоге уровнем выше текущего </a></li>
+			<li><a href="../../about">относительная на стр в каталоге двумя уровнями выше </a></li>
+			<li><a href="/about">сокращенная на главную</a></li>
+			<li><a href="/news/12">сокращенная на внутреннюю</a></li>
+      </ol>
+    </div>
+  <div id="page2">
+        <h2>Таблица</h2>
+        <table>
+            <tr class="nechet">
+                <th>Колонка №1</th>
+                <th>Колонка №2</th>
+                <th>Колонка №3</th>
+            </tr>
+            <tr class="chet">
+                <td>Ячейка</td>
+                <td>Ячейка</td>
+                <td>Ячейка</td>
+            </tr>
+            <tr class="nechet">
+                <td colspan="2">Обеденённая двойная</td>
+                <td>Ячейка</td>
+            </tr>
+            <tr class="chet">
+                <td colspan="3">Ячейка обединённая тройная</td>
+            </tr>
+            <tr class="nechet">
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+                <td>Ячейка 3</td>
+            <tr class="chet">
+                <td>Ячейка А</td>
+                <td>Ячейка Б</td>
+                <td>Ячейка В</td>
+            </tr>
+        </table>
+    </div>
+
+	  <div id="page3">
+  <h2>Форма</h2>
+	  
+  <form action="/" method="POST">
+
+    <label>
+      Ф.И.О.:
+      <br>
+      <input name="field-name-1" value="Введите Ф.И.О.">
+    </label>
+    <br>
+
+    <label>
+      Адрес электронной почты/email:
+      <br>
+      <input name="field-email" type="email" placeholder="Введите email">
+    </label>
+    <br>
+
+    <label>
+      Дата дня рожденния:
+      <br>
+      <input name="field-date" value="2022-09-08" type="date">
+    </label>
+    <br> Пол:
+
+    <br>
+    <label>
+      <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> Мужской
+    </label>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2"> Женский
+    </label>
+    <br> Количество конечностей:
+    <br>
+    <label>
+      <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> 1
+    </label>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2"> 2
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2"> 3
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2"> 4
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2"> Нет в наличии
+    </label>
+    <br>
+
+    <label>
+      Сверхспособности:
+      <br>
+      <select name="field-name-4[]" multiple="multiple">
+        <option value="Значение1">Бессмертие</option>
+        <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+        <option value="Значение3" selected="selected">Левитация</option>
+      </select>
+    </label>
+    <br>
+
+    <label>
+      Немного о себе (ваша биография):
+      <br>
+      <textarea name="field-name-2">Я...</textarea>
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" checked="checked" name="check-1"> С контрактом ознакомлен(-а)</label>
+    <br> Отправка формы:
+    <input type="submit" value="Отправить">
+      </form>
+	  </div>
+	  </div>
+
+	  <footer>
+		  <h3>Автор: Некрасов Даниил</h3>
+		  <div class="container"></div>
+			  </footer>
+</body>
+</html>
