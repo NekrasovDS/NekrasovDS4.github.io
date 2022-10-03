@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
   <body>
-    <header>
+    <header class="container-fluid">
             <img alt="Headhead" style="float:left;padding: 10px 20px; width: 120px; height: 120px;" src="HarrierDuBois3.1.jpg" />
             <br />
             <p id="Baze" style="text-align:left; font-family : LATHA; font-size:50px;"><em>Сайт Рафаэля Амброзиуса Кусто</em></p>
@@ -24,8 +24,10 @@
 <div class="main">
   <div class="container"></div>
 </div>
-	  <div id="allp">
-	  <div id="page1">
+	  <div id="allp" class="row">
+		  
+	  <div id="page1" class="col-lg-4">
+		  
 	  <h2 class="titlist">Гиперссылки</h2>
       <ol>
         <li><a class="titlist" href="https://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
@@ -60,8 +62,11 @@
 			<li><a href="/about">сокращенная на главную</a></li>
 			<li><a href="/news/12">сокращенная на внутреннюю</a></li>
       </ol>
+		  
     </div>
-  <div id="page2">
+		  
+  <div id="page2" class-lg-4>
+	  
         <h2>Таблица</h2>
         <table>
             <tr class="nechet">
@@ -91,34 +96,32 @@
                 <td>Ячейка В</td>
             </tr>
         </table>
+	  
     </div>
 
-	  <div id="page3">
-  <h2>Форма</h2>
-	  
+		  
+	  <div id="page3" class="col-lg-4">
+		  
+  <h2>Форма</h2>	  
   <form action="/" method="POST">
-
     <label>
       Ф.И.О.:
       <br>
       <input name="field-name-1" value="Введите Ф.И.О.">
     </label>
     <br>
-
     <label>
       Адрес электронной почты/email:
       <br>
       <input name="field-email" type="email" placeholder="Введите email">
     </label>
     <br>
-
     <label>
       Дата дня рожденния:
       <br>
       <input name="field-date" value="2022-09-08" type="date">
     </label>
     <br> Пол:
-
     <br>
     <label>
       <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> Мужской
@@ -147,7 +150,6 @@
       <input type="radio" name="radio-group-1" value="Значение2"> Нет в наличии
     </label>
     <br>
-
     <label>
       Сверхспособности:
       <br>
@@ -158,7 +160,6 @@
       </select>
     </label>
     <br>
-
     <label>
       Немного о себе (ваша биография):
       <br>
@@ -170,9 +171,12 @@
     <br> Отправка формы:
     <input type="submit" value="Отправить">
       </form>
+		  
 	  </div>
+		  
 	  </div>
 
+	  
 	  <footer>
 		  <h3>Автор: Некрасов Даниил</h3>
 		  <div class="container"></div>
