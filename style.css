@@ -45,6 +45,11 @@ header{
     height: 300px;
 background: linear-gradient(90deg, #8B4513, #FFD700);
 }
+header img {
+        float: left;
+        height: 160px;
+}
+
 
 footer {
     height: 200px;
